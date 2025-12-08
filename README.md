@@ -36,11 +36,11 @@ The Hong Kong Polytechnic University
 
 
 
-## 🎬 Demo Video
+## 🎬 Demo Video (YouTube)
 
 <p align="center">
   <!-- Replace YOUR_YOUTUBE_URL with your actual YouTube video link -->
-  <a href="YOUR_YOUTUBE_URL" target="_blank">
+  <a href="https://www.youtube.com/watch?v=lvOJoPdczvA" target="_blank">
     <img src="assets/teaser.png" alt="Demo Video" width="70%">
   </a>
 </p>
