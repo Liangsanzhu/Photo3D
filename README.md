@@ -39,14 +39,11 @@ The Hong Kong Polytechnic University
 ## 🎬 Demo Video
 
 <p align="center">
-  <!-- Clickable thumbnail; on GitHub this opens the video player page -->
-  <a href="https://github.com/Liangsanzhu/Photo3D/raw/main/assets/demo.mp4">
+  <!-- Replace YOUR_YOUTUBE_URL with your actual YouTube video link -->
+  <a href="YOUR_YOUTUBE_URL" target="_blank">
     <img src="assets/teaser.png" alt="Demo Video" width="70%">
   </a>
 </p>
-
-<!-- On GitHub, an inline mp4 URL is usually rendered as an embedded player with a progress bar -->
-https://github.com/Liangsanzhu/Photo3D/raw/main/assets/demo.mp4
 
 
 ## 👀 TODO
