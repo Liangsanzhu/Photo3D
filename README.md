@@ -33,11 +33,6 @@ The Hong Kong Polytechnic University
     </h4>
 </div>
 
-<p align="center">
-
-<img src="assets/teaser.png" alt="Visual Results">
-
-</p>
 
 
 
@@ -95,4 +90,3 @@ The following are BibTeX references:
   primaryClass={cs.CV},
   url={xxx}, 
 }
-# Photo3D
