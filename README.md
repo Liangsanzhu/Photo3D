@@ -1,8 +1,8 @@
 <div align="center">
-<h2>AlignCVC: Aligning Cross-View Consistency for Single-Image-to-3D Generation</h2>
+<h2>Photo3D: Advancing Photorealistic 3D Generation through Structure‑Aligned Detail Enhancement</h2>
 
-[Xinyue Liang](https://scholar.google.com/citations?user=R9PlnKgAAAAJ&hl=zh-CN)<sup>\*</sup> |
-[Zhiyuan Ma](https://scholar.google.com/citations?user=F15mLDYAAAAJ&hl=en)<sup>\*</sup> | 
+[Xinyue Liang](https://scholar.google.com/citations?user=R9PlnKgAAAAJ&hl=zh-CN) |
+[Zhiyuan Ma](https://scholar.google.com/citations?user=F15mLDYAAAAJ&hl=en)| 
 [Lingchen Sun](https://scholar.google.com/citations?hl=zh-CN&tzom=-480&user=ZCDjTn8AAAAJ) | 
 Yanjun Guo | 
 [Lei Zhang](https://www4.comp.polyu.edu.hk/~cslzhang)
@@ -13,21 +13,21 @@ The Hong Kong Polytechnic University
 
 <br>
 
-<sup>*</sup> These authors contributed equally.
 
-<h3>📍  AAAI 2026</h3>
+
+<h3>ARXIV 2025</h3>
 
 </div>
 
 <div>
     <h4 align="center">
-     <a href="https://liangsanzhu.github.io/aligncvc.github.io/" target='_blank'>
+     <a href="https://liangsanzhu.github.io/Photo3D/" target='_blank'>
         <img src="https://img.shields.io/badge/💡-Project%20Page-gold">
         </a>
         <a href="https://arxiv.org/abs/2506.23150" target='_blank'>
         <img src="https://img.shields.io/badge/arXiv-2506.23150-b31b1b.svg">
         </a>
-         <a href="https://github.com/Liangsanzhu/AlignCVC/" target='_blank'>
+         <a href="https://github.com/Liangsanzhu/Photo3D/" target='_blank'>
         <img src="https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white">
         </a>
     </h4>
@@ -35,8 +35,23 @@ The Hong Kong Polytechnic University
 
 <p align="center">
 
-<img src="assets/intro.png" alt="Visual Results">
+<img src="assets/teaser.png" alt="Visual Results">
 
+</p>
+
+
+
+## 🎬 Demo Video
+
+<p align="center">
+  <video src="assets/demo.mp4"
+         controls
+         loop
+         muted
+         playsinline
+         style="max-width: 80%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+    Your browser does not support the video tag.
+  </video>
 </p>
 
 
@@ -50,7 +65,7 @@ The Hong Kong Polytechnic University
 
 <p align="center">
 
-<img src="assets/pipeline.png" alt="AlignCVC Framework">
+<img src="assets/method.svg" alt="Photo3D Framework">
 
 </p>
 
@@ -59,8 +74,8 @@ The Hong Kong Polytechnic University
 
 1. Clone repo
     ```bash
-    git clone https://github.com/Liangsanzhu/AlignCVC.git
-    cd AlignCVC
+    git clone https://github.com/Liangsanzhu/Photo3D.git
+    cd Photo3D
     ```
     
 ## 💬 Contact:
@@ -71,12 +86,13 @@ If our code helps your research or work, please consider citing our paper.
 The following are BibTeX references:
 
 ```
-@misc{liang2025aligncvcaligningcrossviewconsistency,
-  title={AlignCVC: Aligning Cross-View Consistency for Single-Image-to-3D Generation}, 
+@misc{xxx,
+  title={Photo3D: Advancing Photorealistic 3D Generation through Structure‑Aligned Detail Enhancement }, 
   author={Xinyue Liang and Zhiyuan Ma and Lingchen Sun and Yanjun Guo and Lei Zhang},
   year={2025},
   eprint={2506.23150},
   archivePrefix={arXiv},
   primaryClass={cs.CV},
-  url={https://arxiv.org/abs/2506.23150}, 
+  url={xxx}, 
 }
+# Photo3D
