@@ -21,7 +21,7 @@ The Hong Kong Polytechnic University
 
 <div>
     <h4 align="center">
-     <a href="https://liangsanzhu.github.io/Photo3D/" target='_blank'>
+     <a href="https://liangsanzhu.github.io/photo3d-page/" target='_blank'>
         <img src="https://img.shields.io/badge/💡-Project%20Page-gold">
         </a>
         <a href="https://arxiv.org/abs/2506.23150" target='_blank'>
