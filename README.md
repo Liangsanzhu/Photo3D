@@ -35,16 +35,13 @@ The Hong Kong Polytechnic University
 
 
 
-
-## 🎬 Demo Video (YouTube)
+## 🎬 Demo Video (Click the image to watch on YouTube)
 
 <p align="center">
-  <!-- Replace YOUR_YOUTUBE_URL with your actual YouTube video link -->
   <a href="https://www.youtube.com/watch?v=lvOJoPdczvA" target="_blank">
-    <img src="assets/teaser.png" alt="Demo Video" width="70%">
+    <img src="assets/teaser.png" alt="Demo Video" width="70%" style="border-radius: 6px; transition: 0.2s; cursor: pointer;">
   </a>
 </p>
-
 
 ## 👀 TODO
 - [ ] Release inference code.
