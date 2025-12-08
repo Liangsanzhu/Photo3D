@@ -39,15 +39,14 @@ The Hong Kong Polytechnic University
 ## 🎬 Demo Video
 
 <p align="center">
-  <video src="assets/demo.mp4"
-         controls
-         loop
-         muted
-         playsinline
-         style="max-width: 80%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
-    Your browser does not support the video tag.
-  </video>
+  <!-- Clickable thumbnail; on GitHub this opens the video player page -->
+  <a href="https://github.com/Liangsanzhu/Photo3D/raw/main/assets/demo.mp4">
+    <img src="assets/teaser.png" alt="Demo Video" width="70%">
+  </a>
 </p>
+
+<!-- On GitHub, an inline mp4 URL is usually rendered as an embedded player with a progress bar -->
+https://github.com/Liangsanzhu/Photo3D/raw/main/assets/demo.mp4
 
 
 ## 👀 TODO
@@ -74,7 +73,7 @@ The Hong Kong Polytechnic University
     ```
     
 ## 💬 Contact:
-If you have any problem, please feel free to contact me at liuyuanliusu@gmail.com
+If you have any problem, please feel free to contact me at xinyue.liang@connect.polyu.hk
 
 ### Citations
 If our code helps your research or work, please consider citing our paper.
