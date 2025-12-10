@@ -24,8 +24,8 @@ The Hong Kong Polytechnic University
      <a href="https://liangsanzhu.github.io/photo3d-page/" target='_blank'>
         <img src="https://img.shields.io/badge/💡-Project%20Page-gold">
         </a>
-        <a href="https://arxiv.org/abs/2506.23150" target='_blank'>
-        <img src="https://img.shields.io/badge/arXiv-2506.23150-b31b1b.svg">
+        <a href="https://arxiv.org/pdf/2512.08535" target='_blank'>
+        <img src="https://img.shields.io/badge/arXiv-2512.08535-b31b1b.svg">
         </a>
          <a href="https://github.com/Liangsanzhu/Photo3D/" target='_blank'>
         <img src="https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white">
@@ -74,12 +74,12 @@ If our code helps your research or work, please consider citing our paper.
 The following are BibTeX references:
 
 ```
-@misc{xxx,
-  title={Photo3D: Advancing Photorealistic 3D Generation through Structure‑Aligned Detail Enhancement }, 
-  author={Xinyue Liang and Zhiyuan Ma and Lingchen Sun and Yanjun Guo and Lei Zhang},
-  year={2025},
-  eprint={2506.23150},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  url={xxx}, 
+@misc{liang2025photo3dadvancingphotorealistic3d,
+      title={Photo3D: Advancing Photorealistic 3D Generation through Structure-Aligned Detail Enhancement}, 
+      author={Xinyue Liang and Zhinyuan Ma and Lingchen Sun and Yanjun Guo and Lei Zhang},
+      year={2025},
+      eprint={2512.08535},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2512.08535}, 
 }
