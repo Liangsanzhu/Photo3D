@@ -15,7 +15,8 @@ The Hong Kong Polytechnic University
 
 
 
-<h3>ARXIV 2025</h3>
+
+<h3>CVPR 2026</h3>
 
 </div>
 
@@ -30,8 +31,12 @@ The Hong Kong Polytechnic University
          <a href="https://github.com/Liangsanzhu/Photo3D/" target='_blank'>
         <img src="https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white">
         </a>
+        <a href="https://huggingface.co/datasets/LaPetitRose/Photo3D-MV" target='_blank'>
+        <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Photo3D--MV-blue">
+        </a>
     </h4>
 </div>
+
 
 
 
@@ -43,7 +48,12 @@ The Hong Kong Polytechnic University
   </a>
 </p>
 
+
+## 📰 News
+- **[2026.03]** We released **Photo3D-MV**, a large-scale multi-view dataset for photorealistic 3D generation! Download it at [Hugging Face](https://huggingface.co/datasets/LaPetitRose/Photo3D-MV).
+
 ## 👀 TODO
+- [x] Release Photo3D-MV dataset.
 - [ ] Release inference code.
 - [ ] Colab demo for convenient test.
 - [ ] Release training code.
@@ -74,10 +84,10 @@ If our code helps your research or work, please consider citing our paper.
 The following are BibTeX references:
 
 ```
-@misc{liang2025photo3dadvancingphotorealistic3d,
+@misc{liang2026photo3dadvancingphotorealistic3d,
       title={Photo3D: Advancing Photorealistic 3D Generation through Structure-Aligned Detail Enhancement}, 
       author={Xinyue Liang and Zhinyuan Ma and Lingchen Sun and Yanjun Guo and Lei Zhang},
-      year={2025},
+      year={2026},
       eprint={2512.08535},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
