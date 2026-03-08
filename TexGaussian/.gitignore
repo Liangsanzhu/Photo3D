@@ -1,0 +1,44 @@
+# extensions
+*.pyc
+*.png
+*.jpg
+*.tar.gz
+*.tar.xz
+*.tar
+*.zip
+*.gif
+*.rar
+*.ply
+*.npy
+LICENSE
+
+# cache
+__pycache__/
+.ipynb*/
+
+# checkpoints
+saved_ckpt/
+shapenet_ckpt/
+*.safetensors
+
+# logs
+/logs
+logs_home/
+quant_logs*/
+qual_logs*/
+workspace/
+
+# data
+data
+demo_data/
+texture_mesh*/
+*.out
+diff-gaussian-rasterization/
+Cap3D_automated_Objaverse_full.csv
+lpips_checkpoints/
+ViT-L-14.pt
+
+# bak
+bak*/
+/.vscode
+/mytools

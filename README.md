@@ -51,6 +51,8 @@ The Hong Kong Polytechnic University
 
 ## 📰 News
 - **[2026.03]** We released **Photo3D-MV**, a large-scale multi-view dataset for photorealistic 3D generation! Download it at [Hugging Face](https://huggingface.co/datasets/LaPetitRose/Photo3D-MV).
+- **[2026.03]** TexGaussian-based Photo3D training/inference guide is available in [`TexGaussian/README.md`](../TexGaussian/README.md).
+- **[2026.03]** We are still organizing the full TRELLIS (Photo3D) codebase (currently our best-performing setup) and will release it as soon as possible.
 
 ## 👀 TODO
 - [x] Release Photo3D-MV dataset.
@@ -75,6 +77,13 @@ The Hong Kong Polytechnic University
     git clone https://github.com/Liangsanzhu/Photo3D.git
     cd Photo3D
     ```
+
+## 📦 Dataset Notes (Photo3D-MV)
+
+- Dataset URL: [LaPetitRose/Photo3D-MV](https://huggingface.co/datasets/LaPetitRose/Photo3D-MV)
+- For dataset download/extract and TexGaussian training details, see [`TexGaussian/README.md`](../TexGaussian/README.md).
+- Some samples may have image size/orientation mismatches with 3D models due to limitations of the 2D generator used during data construction.
+- As newer 2D generators preserve structure better, re-optimizing `rgb_grid.png` (e.g., "keep geometry unchanged, make texture more realistic") can further improve results.
     
 ## 💬 Contact:
 If you have any problem, please feel free to contact me at xinyue.liang@connect.polyu.hk

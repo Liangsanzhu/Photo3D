@@ -1,0 +1,27 @@
+CUDA_VISIBLE_DEVICES=5 accelerate launch --num_processes 1 train_from_grid.py \
+  --workspace workspace_grid_lpips_new \
+  --batch_size 8 \
+  --num_epochs 5000 \
+  --lambda_color 0.3 \
+  --lambda_clip 0.5 \
+  --clip_num_crops 8 \
+  --clip_min_scale 0.3 \
+  --clip_max_scale 0.8 \
+  --clip_input_size 224 \
+  --lambda_lpips 1.0 \
+  --lr 1e-4 \
+  --output_size 512 \
+  --grid_image_dir /home/xinyue_liang/lxy/dreamposible/1w/data/7_decode_img_gpt_new \
+  --mesh_root /home/xinyue_liang/lxy/dreamposible/1w/data/3_trellis_gen_geo/3_trellis_gen_geo \
+  --text_file /home/xinyue_liang/lxy/dreamposible/1w/data/text_optimized_prompts_10000.txt \
+  --use_text True \
+  --num_points 100000 \
+  --resume /home/xinyue_liang/lxy/TexGaussian/PBR_model.safetensors \
+  --image_interval 1000 \
+  --use_material True \
+  --no-supervise-material \
+  --grid_yaw_offset_deg 90 \
+  --grid_cam_radius_override 1.7 \
+  --grid_fovy 39.6 \
+  --debug_log \
+  --debug_interval 10000
