@@ -52,13 +52,7 @@ The Hong Kong Polytechnic University
 ## 📰 News
 - **[2026.03]** We released **Photo3D-MV**, a large-scale multi-view dataset for photorealistic 3D generation! Download it at [Hugging Face](https://huggingface.co/datasets/LaPetitRose/Photo3D-MV).
 - **[2026.03]** TexGaussian-based Photo3D training/inference guide is available in [`TexGaussian/README.md`](TexGaussian/README.md).
-- **[2026.03]** We are still organizing the full TRELLIS (Photo3D) codebase (currently our best-performing setup) and will release it as soon as possible.
-
-## 👀 TODO
-- [x] Release Photo3D-MV dataset.
-- [ ] Release inference code.
-- [ ] Colab demo for convenient test.
-- [ ] Release training code.
+- **[2026.03]** TRELLIS-based Photo3D inference is now available in [`TRELLIS/`](TRELLIS), with ready-to-run download and inference commands in [`TRELLIS/README.md`](TRELLIS/README.md).
 
 
 ## 🌟 Overview Framework
@@ -77,6 +71,35 @@ The Hong Kong Polytechnic University
     git clone https://github.com/Liangsanzhu/Photo3D.git
     cd Photo3D
     ```
+
+2. Use Photo3D TRELLIS
+
+   - Install TRELLIS environment first by following the official TRELLIS repo: [microsoft/TRELLIS](https://github.com/microsoft/TRELLIS).
+   - Download checkpoints to `TRELLIS/ckpt/`:
+     ```bash
+     cd /home/xinyue_liang/lxy/Photo3D/TRELLIS
+     mkdir -p ckpt
+     
+     huggingface-cli download LaPetitRose/Photo3D_models \
+       --repo-type model \
+       --include "Trellis/*" \
+       --local-dir .
+     
+     cp -r Trellis/* ckpt/
+     rm -rf Trellis
+     ```
+   - Run inference directly:
+     ```bash
+     cd /home/xinyue_liang/lxy/Photo3D/TRELLIS
+     
+     python infer.py \
+       --input ./assets/42.png \
+       --output-dir ./output \
+       --pretrained microsoft/TRELLIS-image-large \
+       --slat-flow-ckpt ./ckpt/slat_denoiser.pt \
+       --slat-flow-json ./ckpt/config.json \
+       --decoder-ckpt ./ckpt/decoder.safetensors
+     ```
 
 ## 📦 Dataset Notes (Photo3D-MV)
 
