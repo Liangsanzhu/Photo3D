@@ -1,0 +1,71 @@
+{
+  "models": {
+    "denoiser": {
+      "name": "SparseStructureFlowModel",
+      "args": {
+        "resolution": 64,
+        "in_channels": 8,
+        "model_channels": 512,
+        "cond_channels": 768,
+        "out_channels": 8,
+        "num_blocks": 16,
+        "num_heads": 8,
+        "mlp_ratio": 4.0,
+        "patch_size": 2,
+        "pe_mode": "ape",
+        "use_fp16": true,
+        "use_checkpoint": true,
+        "share_mod": false,
+        "qk_rms_norm": false,
+        "qk_rms_norm_cross": false,
+        "enable_reference_net": true,
+        "reference_channels": 512,
+        "num_reference_images": 4
+      }
+    }
+  },
+  "dataset": {
+    "name": "CustomSparseFeat2Render",
+    "args": {
+      "roots": "/home/xinyue_liang/lxy/dreamposible/1w/data/7_encoded_slat_gpt_reszie_condition_vae_optimized",
+      "image_size": 518,
+      "model": "dinov2_vitl14_reg",
+      "resolution": 64,
+      "min_aesthetic_score": 5.0,
+      "max_num_voxels": 32768,
+      "ss_dec_path": "/home/xinyue_liang/.cache/huggingface/hub/models--JeffreyXiang--TRELLIS-image-large/snapshots/25e0d31ffbebe4b5a97464dd851910efc3002d96/ckpts/slat_dec_gs_swin8_B_64l8gs32_fp16.safetensors",
+      "enable_decoder_training": true
+    }
+  },
+  "trainer": {
+    "name": "SparseFlowMatchingTrainer",
+    "args": {
+      "batch_size": 1,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 1e-4,
+      "weight_decay": 0.01,
+      "warmup_steps": 1000,
+      "max_steps": 50000,
+      "save_every": 1000,
+      "eval_every": 500,
+      "log_every": 10,
+      "use_amp": true,
+      "use_checkpoint": true,
+      "reference_loss_weight": 0.1
+    }
+  },
+  "reference_net": {
+    "enabled": true,
+    "num_reference_images": 4,
+    "reference_image_size": 256,
+    "camera_aware": true,
+    "style_weight": 0.1,
+    "content_weight": 1.0
+  }
+}
+
+
+
+
+
+

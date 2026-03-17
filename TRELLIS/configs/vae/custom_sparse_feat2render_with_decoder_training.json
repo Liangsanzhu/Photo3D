@@ -1,0 +1,68 @@
+{
+    "models": {
+        "denoiser": {
+            "name": "ElasticSLatFlowModel",
+            "args": {
+                "resolution": 64,
+                "in_channels": 8,
+                "model_channels": 768,
+                "num_blocks": 12,
+                "num_heads": 12,
+                "mlp_ratio": 4,
+                "attn_mode": "swin",
+                "window_size": 8,
+                "use_fp16": true,
+                "use_checkpoint": false
+            }
+        }
+    },
+    "dataset": {
+        "name": "CustomSparseFeat2Render",
+        "args": {
+            "roots": "/path/to/your/data",
+            "image_size": 518,
+            "model": "dinov2_vitl14_reg",
+            "resolution": 64,
+            "min_aesthetic_score": 5.0,
+            "max_num_voxels": 32768,
+            "ss_dec_path": "/home/xinyue_liang/lxy/dreamposible/1w/data/7_encoded_slat_gpt_reszie/checkpoint_3000/decoder.safetensors",
+            "enable_decoder_training": true
+        }
+    },
+    "trainer": {
+        "name": "SparseFlowMatchingTrainer",
+        "args": {
+            "max_steps": 1000000,
+            "batch_size_per_gpu": 2,
+            "batch_split": 2,
+            "optimizer": {
+                "name": "AdamW",
+                "args": {
+                    "lr": 1e-4,
+                    "weight_decay": 0.01
+                }
+            },
+            "lr_scheduler": {
+                "name": "CosineAnnealingLR",
+                "args": {
+                    "T_max": 1000000,
+                    "eta_min": 1e-6
+                }
+            },
+            "ema_rate": [
+                0.9999
+            ],
+            "fp16_mode": "amp",
+            "grad_clip": 1.0,
+            "i_log": 100,
+            "i_sample": 1000,
+            "i_save": 5000,
+            "train_decoder": true,
+            "t_schedule": {
+                "name": "cosine",
+                "args": {}
+            },
+            "sigma_min": 0.002
+        }
+    }
+}
