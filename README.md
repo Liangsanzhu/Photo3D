@@ -77,7 +77,7 @@ The Hong Kong Polytechnic University
    - Install TRELLIS environment first by following the official TRELLIS repo: [microsoft/TRELLIS](https://github.com/microsoft/TRELLIS).
    - Download checkpoints to `TRELLIS/ckpt/`:
      ```bash
-     cd /home/xinyue_liang/lxy/Photo3D/TRELLIS
+     cd Photo3D/TRELLIS
      mkdir -p ckpt
      
      huggingface-cli download LaPetitRose/Photo3D_models \
@@ -90,7 +90,7 @@ The Hong Kong Polytechnic University
      ```
    - Run inference directly:
      ```bash
-     cd /home/xinyue_liang/lxy/Photo3D/TRELLIS
+     cd Photo3D/TRELLIS
      
      python infer.py \
        --input ./assets/42.png \
